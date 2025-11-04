@@ -1,0 +1,7 @@
+services:
+  jdk25-builder:
+    build: .
+    container_name: jdk25-builder
+    volumes:
+      - ./output:/opt/jdk/build/linux-x86_64-server-release/images
+    tty: true
